@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     if (data) {
       setUser(data.token);
-      navigate('/dashboard', { replace: true });
+      navigate('/dashboard/home', { replace: true });
     }
   }, [data]);
 

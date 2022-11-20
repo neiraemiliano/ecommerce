@@ -20,7 +20,7 @@ const App = () => {
       <Route path="/signup" element={<SignUp />} />
 
       <Route path="/dashboard" element={<PrivateDrawer />}>
-        <Route index element={<Dashboard />} />
+        <Route path="/dashboard/home" element={<Dashboard />} />
         <Route path="/dashboard/products" element={<DashboardProducts />} />
       </Route>
     </Routes>
