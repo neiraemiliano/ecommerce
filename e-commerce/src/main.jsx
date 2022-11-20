@@ -8,7 +8,14 @@ import App from './App';
 import { MaterialTailwindControllerProvider } from './context';
 import { AuthProvider } from './context/AuthContext';
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: 0,
+      suspense: true,
+    },
+  },
+});
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
