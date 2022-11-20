@@ -2,6 +2,7 @@ import { HomeIcon, UserCircleIcon, TableCellsIcon, BellIcon } from '@heroicons/r
 
 import React from 'react';
 import Dashboard from '../pages/dashboard/Dashboard';
+import DashboardProducts from '../pages/dashboard/Products';
 
 const icon = {
   className: 'w-5 h-5 text-inherit',
@@ -14,7 +15,7 @@ export const routes = [
       {
         icon: <HomeIcon {...icon} />,
         name: 'dashboard',
-        path: '/home',
+        path: '#',
         element: <Dashboard />,
       },
       // {
@@ -23,12 +24,12 @@ export const routes = [
       //   path: '/profile',
       //   element: <Profile />,
       // },
-      // {
-      //   icon: <TableCellsIcon {...icon} />,
-      //   name: 'tables',
-      //   path: '/tables',
-      //   element: <Tables />,
-      // },
+      {
+        icon: <TableCellsIcon {...icon} />,
+        name: 'productos',
+        path: '/products',
+        element: <DashboardProducts />,
+      },
       // {
       //   icon: <BellIcon {...icon} />,
       //   name: 'notifactions',
