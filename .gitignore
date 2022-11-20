@@ -1,0 +1,30 @@
+# Logs
+e-commerce/logs
+e-commerce/*.log
+e-commerce/npm-debug.log*
+e-commerce/yarn-debug.log*
+e-commerce/yarn-error.log*
+e-commerce/pnpm-debug.log*
+e-commerce/lerna-debug.log*
+
+e-commerce/node_modules
+e-commerce/dist
+e-commerce/dist-ssr
+e-commerce/*.local
+
+# Editor directories and files
+e-commerce/.vscode/*
+e-commerce/!.vscode/extensions.json
+e-commerce/.idea
+e-commerce/.DS_Store
+e-commerce/*.suo
+e-commerce/*.ntvs*
+e-commerce/*.njsproj
+e-commerce/*.sln
+e-commerce/*.sw?
+
+e-commerce/.prettierrc.js
+e-commerce/.eslintrc.js
+
+backend/node_modules
+
